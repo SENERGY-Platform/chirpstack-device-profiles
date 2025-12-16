@@ -41,7 +41,9 @@ function App() {
     <Layout style={{ minHeight: "100vh" }}>
       <CustomRouter history={history}>
         <Layout.Header className="layout-header">
-          <Typography.Title level={3} style={{ marginTop: "12px" }}>LoRaWAN<sup>&reg;</sup> Device Profiles Editor</Typography.Title>
+          <Typography.Title level={3} style={{ marginTop: "12px" }}>
+            ChirpStack Device Profiles Editor
+          </Typography.Title>
         </Layout.Header>
         <Layout className="layout">
           <Layout.Sider width="300" theme="light" className="layout-menu">
