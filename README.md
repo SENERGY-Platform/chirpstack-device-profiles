@@ -47,13 +47,6 @@ be imported by ChirpStack or potentially any other LNS.
 * Fill in the form and add at least one firmware version by clicking the _Add firmware version_ button.
     * For each firmware version you can select one or multiple profiles and optionally a codec.
 
-### Update vendor
-
-* Select a vendor in the left menu (if no vendor is selected).
-* Click _Update vendor_ in the left menu.
-* Update the vendor by selecting the devices that you added in the previous step.
-* Click _Submit_.
-
 ### Create pull-request
 
 Once you have added the vendor(s), profile(s), codec(s) and device(s) you wish
