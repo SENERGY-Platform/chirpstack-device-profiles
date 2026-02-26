@@ -318,3 +318,25 @@ function Decode(fPort, bytes, variables) {
 		}
 	}
 }
+
+function numberToBytesFixed(num, byteLength) {
+  const bytes = new Array(byteLength).fill(0);
+  for (let i = byteLength - 1; i >= 0; i--) {
+    bytes[i] = num & 0xFF;
+    num >>>= 8;
+  }
+  return bytes;
+}
+
+function encodeDownlink(input) {
+    switch(input.data.fPort) {
+        case 11:
+            var bytes = [0x01];
+            bytes.push(...numberToBytesFixed(input.data.data, 3));
+            return {
+                bytes: bytes
+            };
+        default:
+            throw "unknown fPort";
+    }
+}
