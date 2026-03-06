@@ -5,12 +5,18 @@ function decodeUplink(input) {
 }
 
 
-
 function getzf(c_num){
     if(parseInt(c_num) < 10)
         c_num = '0' + c_num;
 
     return c_num;
+}
+
+function str_pad(byte){
+    var zero = '00';
+    var hex= byte.toString(16);
+    var tmp  = 2-hex.length;
+    return zero.substr(0,tmp) + hex + " ";
 }
 
 function getMyDate(str){
