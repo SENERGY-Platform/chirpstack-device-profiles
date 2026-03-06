@@ -9,6 +9,7 @@ devices = [
     "lds02.toml",
     "ldds75.toml",
     "lht65n.toml",
+    "lht52.toml"
 ]
 
 [vendor.metadata]

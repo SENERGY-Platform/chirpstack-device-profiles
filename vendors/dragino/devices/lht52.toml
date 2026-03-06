@@ -1,0 +1,18 @@
+[device]
+id = "dccd4fd1-e8d0-4090-acf5-89dfd44ee8e4"
+name = "LHT52"
+description = "Temperature & Humidity Sensor, optional external temperature sensor."
+
+[[device.firmware]]
+version = "1.0.0"
+profiles = [
+    "AS923-1_0_3.toml",
+    "AU915-1_0_3.toml",
+    "EU868-1_0_3.toml",
+    "US915-1_0_3.toml",
+]
+codec = "lht52.js"
+
+[device.metadata]
+product_url = "https://dragino.com/products/temperature-humidity-sensor/item/199-lht52.html"
+documentation_url = "https://dragino.com/products/temperature-humidity-sensor/item/199-lht52.html"
